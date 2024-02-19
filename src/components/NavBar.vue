@@ -2,18 +2,18 @@
   <header>
     <nav class="container">
       <div class="branding">
-        <router-link :to="{name: 'Home'}">FireBlog</router-link>
+        <router-link class="header" :to="{name: 'Home'}">FireBlog</router-link>
       </div>
       <div class="nav-links">
         <ul v-show="!mobile">
           <router-link class="link" :to="{name: 'Home'}">Home</router-link>
-          <router-link class="link" :to="{name: 'About'}">Blogs</router-link>
-          <router-link class="link" :to="{name: 'About'}">Create Post</router-link>
+          <router-link class="link" :to="{name: 'Blogs'}">Blogs</router-link>
+          <router-link class="link" :to="{name: 'CreatePost'}">Create Post</router-link>
           <router-link class="link" :to="{name: 'About'}">Login/Register</router-link>
         </ul>
       </div>
     </nav>
-    <menuIcon @click="toggleMobileNav" class="menu-icon"/>
+    <menuIcon @click="toggleMobileNav" class="menu-icon" v-show="mobile"/>
 
     <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
@@ -75,7 +75,7 @@ header {
     transition: 0.3s color ease;
 
     &:hover {
-      color: #A569BD;
+      color: DarkSalmon;
     }
   }
 
@@ -89,7 +89,7 @@ header {
 
       .header {
         font-weight: 600;
-        font-size: 24px;
+        font-size: 20px;
         color: #000;
         text-decoration: none;
       }
@@ -106,7 +106,7 @@ header {
         margin-right: 32px;
 
         .link {
-          margin-right: 24px;
+          margin-right: 20px;
         }
 
         .link:last-child {

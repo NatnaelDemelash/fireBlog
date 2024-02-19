@@ -4,15 +4,19 @@
       <NavBar />
       <router-view />
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import NavBar from './components/NavBar.vue';
+import Footer from './components/Footer.vue';
+
 export default {
   name: "app",
   components: {
-    NavBar
+    NavBar,
+    Footer
   },
   data() {
     return {};
@@ -25,14 +29,14 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Inria+Sans&family=Roboto+Mono&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   
-  font-family: "Fira Code", monospace;
+  font-family: "Inria Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
