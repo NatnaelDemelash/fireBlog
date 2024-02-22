@@ -52,6 +52,9 @@ export default {
 
 <style lang="scss" scoped>
 .blog-card-wrapper {
+  position: relative;
+  padding: 80px 16px;
+  background-color: #f1f1f1;
   h3{
     margin-bottom: 32px;
     font-size: 28px;
@@ -97,7 +100,6 @@ export default {
     display: grid;
     grid-template-columns: 1fr;
     gap: 32px;
-
 
     @media screen and (min-width: 500px) {
       grid-template-columns: repeat(2, 1fr);
