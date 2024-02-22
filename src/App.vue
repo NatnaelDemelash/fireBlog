@@ -76,4 +76,14 @@ export default {
     fill: #fff;
   }
 }
+
+.blog-card-wrapper{
+  position: relative;
+  padding: 80px 16px;
+  background-color: #FFF;
+
+  @media screen and (min-width: 500px) {
+    padding: 100px 16px;
+  }
+}
 </style>
