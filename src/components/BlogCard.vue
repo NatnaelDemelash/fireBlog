@@ -42,7 +42,7 @@ import Delete from "../assets/Icons/trash-regular.svg";
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  background-color: #E5E7E9;
+  background-color: #f4f4f4;
   min-height: 420px;
   transition: 0.5s ease all;
 
