@@ -102,7 +102,7 @@ button,
   cursor: pointer;
   margin-top: 24px;
   padding: 12px 24px;
-  background-color: #303030;
+  background-color: #2b4cae;
   color: #fff;
   border-radius: 20px;
   border: none;

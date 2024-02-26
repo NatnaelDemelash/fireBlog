@@ -25,9 +25,10 @@
 </template>
 
 <script>
+import Modal from '@/components/Modal.vue';
+import Loading from "@/components/Loading.vue";
 import email from "../assets/Icons/envelope-regular.svg";
-import Modal from "../components/Modal.vue";
-import Loading from "../components/Loading.vue";
+
 export default {
   name: "ForgotPassword",
   data() {

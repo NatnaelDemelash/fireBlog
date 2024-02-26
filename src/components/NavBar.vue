@@ -9,7 +9,7 @@
           <router-link class="link" :to="{name: 'Home'}">Home</router-link>
           <router-link class="link" :to="{name: 'Blogs'}">Blogs</router-link>
           <router-link class="link" :to="{name: 'CreatePost'}">Create Post</router-link>
-          <router-link class="link" :to="{name: 'About'}">Login/Register</router-link>
+          <router-link class="link" :to="{name: 'Login'}">Login/Register</router-link>
         </ul>
       </div>
     </nav>
@@ -18,9 +18,9 @@
     <transition name="mobile-nav">
       <ul class="mobile-nav" v-show="mobileNav">
           <router-link class="link" :to="{name: 'Home'}">Home</router-link>
-          <router-link class="link" :to="{name: 'About'}">Blogs</router-link>
-          <router-link class="link" :to="{name: 'About'}">Create Post</router-link>
-          <router-link class="link" :to="{name: 'About'}">Login/Register</router-link>
+          <router-link class="link" :to="{name: 'Blogs'}">Blogs</router-link>
+          <router-link class="link" :to="{name: 'CreatePost'}">Create Post</router-link>
+          <router-link class="link" :to="{name: 'Login'}">Login/Register</router-link>
       </ul>
     </transition>
   </header>
